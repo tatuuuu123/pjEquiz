@@ -47,6 +47,15 @@ class Product{
 
     }
 
+<<<<<<< HEAD
+=======
+    public static function list_product(){
+        $db = new Db();
+        $sql = "SELECT * FROM product";        
+        $result = $db -> select_to_array($sql);
+        return $result;
+    }
+>>>>>>> tuananh
 
     public static function list_product_by_cateid($cateid){
         $db = new Db();
